@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: #0e0e0e;
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  .grid-container {
+    width: 50%;
+    height: 50%;
+    box-shadow: 0px 0px 20px 2px #ffffff6c;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr; // ✅ Corrected
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 1rem;
+  
+    .grid-item {
+      color: black;
+      text-align: center;
+      border: 1px solid gold;
+    }
+  
+    // Color for each grid item
+    @for $i from 1 through 8 {
+      .grid-item:nth-child(#{$i}) {
+        background-color: nth(
+          (#fff, #ffeb3b, #ff9800, #ff5722, #8d6e63, #b73a3a, #3f51b5, #ad21f3),
+          $i
+        );
+      }
+    }
+  }
+  
+  // Second Grid Container
+  .grid-container1 {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  
+    .grid-item1 {
+      border: 1px solid greenyellow;
+    }
+     // Color for each grid item
+     @for $i from 1 through 8 {
+        .grid-item1:nth-child(#{$i}) {
+          background-color: nth(
+            (#fff, #ffeb3b, #ff9800, #ff5722, #8d6e63, #b73a3a, #3f51b5, #ad21f3),
+            $i
+          );
+        }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7,1fr;
+    }
+    .grid-container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6;
+        gap: 2rem;
+    }
+  }
