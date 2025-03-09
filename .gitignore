@@ -1,2 +1,26 @@
 trick.txt
 practice.js
+
+# Windows-related files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python-related
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+.code-workspace
+
+# Logs & Temp Files
+*.log
+*.tmp
+
+# Ignore OneDrive Sync files
+.OneDrive/
