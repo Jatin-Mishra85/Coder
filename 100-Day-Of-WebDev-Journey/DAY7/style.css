@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  padding: 4rem 6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfc0ab;
+}
+
+.layout1,
+.layout2,
+.layout3 {
+  width: 80%;
+  aspect-ratio: 1/0.5;
+  position: relative;
+  background-color: #fff;
+}
+.layout1 .img_layout,
+.layout2 .img_layout,
+.layout3 .img_layout {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  filter: blur(2px);
+}
+
+.layout1 .lay1_header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.layout1 .lay1_header .lay1_logo {
+  line-height: 0.6;
+  padding: 0.5rem;
+}
+.layout1 .lay1_header .lay1_logo h1 {
+  font-size: 2rem;
+  color: #000;
+}
+.layout1 .lay1_header .lay1_logo h1:first-child {
+  color: #f39654;
+}
+.layout1 .lay1_header .lay1_nav {
+  display: flex;
+  gap: 6rem;
+  padding: 0.5rem;
+}
+.layout1 .lay1_header .lay1_nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  margin-right: 2rem;
+}
+.layout1 .lay1_section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.layout1 .lay1_section .lay1_section_left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.layout1 .lay1_section .lay1_section_left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: -20%;
+}
+.layout1 .lay1_section .lay1_section_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.layout1 .lay1_section .lay1_section_right p {
+  width: 65%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.layout1 .lay1_section .lay1_section_right p span {
+  color: #f39654;
+}
+.layout1 .lay1_section .lay1_section_right button {
+  width: 18vh;
+  height: 5vh;
+  border-radius: 20px;
+  background-color: #f39654;
+  color: #fff;
+  border: none !important;
+  outline: none !important;
+}/*# sourceMappingURL=style.css.map */
