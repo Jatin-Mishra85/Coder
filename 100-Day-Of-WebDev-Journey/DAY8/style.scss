@@ -10,10 +10,14 @@
 }
 
 html,
-body,
+body {
+  width: 100%;
+  height: 100%;
+}
 main {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 main {
   background-color: #f6dc43;
@@ -50,66 +54,36 @@ main {
   background-color: #6cbf30;
   border-radius: 50%;
   border: 6px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   position: relative;
   overflow: hidden;
-}
-.X-shadow {
-  width: 60%;
-  height: 60%;
-  position: relative;
-  z-index: 2;
 
+  .X-shape {
+    width: 75%;
+    height: 75%;
+    background-color: gray;
+    border-radius: 10%;
+    border: 20px solid;
+    border-image: linear-gradient(to right, #000000, #434347, #000000, #434347)
+      1;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.8s;
+  }
+  .left {
+    left: -50%;
+  }
+  .right {
+    right: -50%;
+    overflow: hidden;
+    img {
+      width: 200%;
+      height: 200%;
+      object-fit: cover;
+      transform: rotate(-45deg) translateY(-35%);
+    }
+  }
 }
-.X-shadow::before,
-.X-shadow::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: grey;
-  
-}
-.X-shadow::before {
-  left: -30%;
-}
-
-.X-shadow::after {
-  right: -190%;
-  transform: scaleX(-1); /* Mirror effect */
-}
-
-/* Black X (Main Shape) */
-.X-shape {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  
-}
-
-.X-shape::before,
-.X-shape::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: black;
-}
-
-.X-shape::before {
-  left: -100%;
-}
-
-.X-shape::after {
-  right: -35%;
-  transform: scaleX(-1); /* Mirror effect */
-}
-
 
 .Greenbutton_top {
   position: absolute;
@@ -173,4 +147,3 @@ main {
   left: 1200%;
   transform: scaleY(-1); /* Flip vertically */
 }
-

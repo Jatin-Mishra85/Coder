@@ -5,10 +5,15 @@
 }
 
 html,
-body,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 main {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -63,60 +68,31 @@ main {
   position: relative;
   overflow: hidden;
 }
-
-.X-shadow {
-  width: 60%;
-  height: 60%;
-  position: relative;
-  z-index: 2;
-}
-
-.X-shadow::before,
-.X-shadow::after {
-  content: "";
-  width: 100%;
-  height: 100%;
+.circle .X-shape {
+  width: 75%;
+  height: 75%;
+  background-color: gray;
+  border-radius: 10%;
+  border: 20px solid;
+  -o-border-image: linear-gradient(to right, #000000, #434347, #000000, #434347) 1;
+     border-image: linear-gradient(to right, #000000, #434347, #000000, #434347) 1;
   position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: grey;
+  transform: rotate(45deg);
+  transition: all ease-in-out 0.8s;
 }
-
-.X-shadow::before {
-  left: -30%;
+.circle .left {
+  left: -50%;
 }
-
-.X-shadow::after {
-  right: -190%;
-  transform: scaleX(-1); /* Mirror effect */
+.circle .right {
+  right: -50%;
+  overflow: hidden;
 }
-
-/* Black X (Main Shape) */
-.X-shape {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.X-shape::before,
-.X-shape::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: black;
-}
-
-.X-shape::before {
-  left: -100%;
-}
-
-.X-shape::after {
-  right: -35%;
-  transform: scaleX(-1); /* Mirror effect */
+.circle .right img {
+  width: 200%;
+  height: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotate(-45deg) translateY(-35%);
 }
 
 .Greenbutton_top {
