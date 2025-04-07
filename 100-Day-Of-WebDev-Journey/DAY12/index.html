@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Comment View</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="main_container">
+        <!-- Left Section: Image + Next/Previous buttons -->
+        <div class="containerLeft">
+          <div class="next"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="previous"><i class="fa-solid fa-arrow-left"></i></div>
+
+          <div class="contents">
+            <div class="elements">
+              <img class="imgs" src="./img/ben1.webp" alt="photo1" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section: Comment Box -->
+        <div class="containerRight">
+          <!-- Top User Info -->
+          <div class="rightTop">
+            <div class="userImg">
+              <img
+                src="https://preview.redd.it/what-makes-omniverse-is-a-good-series-for-you-what-are-the-v0-7fz12m9o0z7b1.png?auto=webp&s=1343a646c0be0975dd818832180d4c515479014c"
+                alt="User Image"
+              />
+            </div>
+            <h1>tennyson_ben10</h1>
+          </div>
+
+          <!-- Middle Comment Area -->
+          <div class="rightMidd"></div>
+
+          <!-- Bottom Like, Comment & Post -->
+          <div class="rightBottom">
+            <div class="likeCom">
+              <button>
+                <i class="fa-regular fa-heart like"></i>
+              </button>
+              <button class="comment">
+                <i class="fa-regular fa-comment"></i>
+              </button>
+            </div>
+            <div class="comArea">
+              <textarea class="commentBox" placeholder="Add a comment..."></textarea>
+              <button class="post">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

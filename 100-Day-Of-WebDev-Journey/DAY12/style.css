@@ -1,0 +1,188 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main wrapper */
+main {
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container for image + comments */
+.main_container {
+  width: fit-content;
+  height: 80vh;
+  min-width: 60vw;
+  display: flex;
+  background-color: #fff;
+}
+
+/* ---------- LEFT CONTAINER ---------- */
+.containerLeft {
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Next and Previous buttons */
+.next, .previous {
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 4vh;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.next { right: 0; }
+.previous { left: 0; }
+
+/* Image content */
+.contents, .elements {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.elements img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* ---------- RIGHT CONTAINER ---------- */
+.containerRight {
+  flex: 1;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+/* Top user info */
+.rightTop {
+  height: 15%;
+  border-bottom: 1px solid #717171;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.userImg {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightTop h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* Middle comment display */
+.rightMidd {
+  height: 60%;
+  overflow-y: auto;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+}
+
+/* Each comment style */
+.commentData {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.comuser img {
+  width: 3.5vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.usercom p {
+  color: #ccc;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Bottom area for like, comment, post */
+.rightBottom {
+  height: 25%;
+  border-top: 1px solid #717171;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Like and comment buttons */
+.likeCom {
+  height: 50%;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.likeCom button {
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+}
+.likeCom button:active {
+  color: #727272;
+}
+
+/* Comment input + post */
+.comArea {
+  height: 50%;
+  display: flex;
+}
+.comArea textarea {
+  width: 85%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  resize: none;
+}
+.comArea button {
+  width: 15%;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+}
+.comArea button:active {
+  color: #727272;
+}
