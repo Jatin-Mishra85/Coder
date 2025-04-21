@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Starbucks</title>
+  <link rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6O5E-jBYbZ2qx9XrLh_hrNqirqCdoBkWrONYaWs8kQ81oeQnbOsjArWzKFJcI2WQzwdA&usqp=CAU"
+    type="image/x-icon" />
+</head>
+
+<body>
+  <main>
+    <header class="w-full bg-white h-[12vh] fixed px-[8rem] flex items-center z-50 shadow-md">
+      <!-- Logo -->
+      <div class="logo w-[10%] aspect-square flex items-center cursor-pointer">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/800px-Starbucks_Corporation_Logo_2011.svg.png"
+          alt="Starbucks" class="w-[30%] object-contain" />
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navPannel flex items-center justify-between h-full w-[90%] gap-6 leading-[3]">
+        <!-- Nav Links -->
+        <ul class=" flex  leading-[3] gap-[4rem]">
+          <li>
+            <a class="text-black hover:text-green-800 font-normal" href="#">Home</a>
+          </li>
+          <li>
+            <a class="text-black hover:text-green-800 font-normal" href="#">Gift</a>
+          </li>
+          <li>
+            <a class="text-black hover:text-green-800 font-normal" href="#">Order</a>
+          </li>
+          <li>
+            <a class="text-black hover:text-green-800 font-normal" href="#">Pay</a>
+          </li>
+          <li>
+            <a class="text-black hover:text-green-800 font-normal" href="#">Store</a>
+          </li>
+        </ul>
+
+        <!-- Search + SignUp -->
+        <div class="navClicker flex items-center gap-[3rem]">
+          <!-- Search Bar -->
+          <div class="searchbar flex items-center relative">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 text-gray-500 text-sm"></i>
+            <input type="search" name="search" id="searchBar" placeholder="Looking for something specific?"
+              class="pl-10 pr-4 py-2 rounded-full border border-black focus:outline-none focus:ring-2 focus:ring-green-500 text-xs w-[16rem] shadow-md" />
+          </div>
+
+          <!-- Sign Up Button -->
+          <button class="signUp p-2 rounded-full border border-[#6B6B6B] w-8 h-8 flex items-center justify-center">
+            <i class="fa-solid fa-user-plus text-xs"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="page1" class="page1 h-auto  w-full pt-[12vh]">
+      <div class="sublogo h-[12vh] px-[8rem] bg-[#1E3932] w-full flex items-center justify-between">
+        <h1 class="text-white text-2xl font-light">Starbucks</h1>
+        <button class="border border-white px-4 text-xs text-white py-2 rounded-full shadow bg-transparent">
+          Know More
+        </button>
+      </div>
+
+      <div class="swipeCard rounded-lg mx-[8rem] mb-[6rem]  w-auto bg-white mt-16 h-[32vh] border relative">
+
+        <div
+          class="rounded-xl shadow-lg flex gap-12 w-full h-full bg-gradient-to-b from-yellow-100 via-yellow-300 to-green-100 justify-between items-center bg-pink absolute">
+          <div class="swipimg h-full"><img class="h-full object-cover"
+              src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/SUMMER_VOUCHER_png_05_bd3dce1159.png "
+              alt="#"></div>
+          <div class="flex flex-col gap-4 w-[90%] mt-5 ">
+            <p class="text-sm font-medium text-gray-700">All New</p>
+            <h2 class="text-xl font-bold text-gray-800 mt-1 flex items-center gap-2">
+              <i class="fa-solid fa-sun text-yellow-500"></i> Refreshing New Summer Specials
+            </h2>
+            <p class="text-gray-700 max-w-xl mt-2">
+              Beat the heat with refreshing summer beverages and indulgent mango delights — crafted to keep you cool and
+              craving more.
+            </p>
+            <button
+              class="bg-green-800 text-white w-[15vw] ml-auto mr-8 mb-4 font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition-all">
+              Explore the Menu
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full flex gap-12 rounded-xl shadow-lg bg-teal-700 text-white justify-between items-center absolute">
+          <div class="swipimg h-full"><img class="h-full object-cover"
+              src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/285_x_595_App_removebg_preview_2_c4bc942184.png"
+              alt="#"></div>
+          <div class="flex flex-col gap-4 w-[90%] mt-5 ">
+            <p class="text-sm">Starbucks</p>
+            <h2 class="text-xl font-bold mt-1">Beverage Subscription</h2>
+            <p class="mt-2 max-w-xl">
+              Starbucks Subscription is Back! Sip Your Favourites for Less. Tap for Details. T&C Apply.
+            </p>
+            <button
+              class="bg-white text-black w-[15vw] ml-auto mr-8 mb-4 font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition-all">
+              Know More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full flex gap-12 rounded-xl shadow-lg bg-gradient-to-r from-yellow-100 via-red-100 via-blue-100 to-green-200 items-center overflow-hidden absolute ">
+          <!-- Firework icons (optional) -->
+          <div class="swipimg h-full"><img class="h-full object-cover"
+              src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Refreshers_dashboard_03_1_10aa41bbca.png"
+              alt="#"></div>
+          <div class="flex flex-col gap-4 w-[90%] mt-5 ">
+            <p class="text-sm font-medium text-gray-700">All New</p>
+            <h2 class="text-xl font-bold text-gray-800 mt-1">Starbucks Refreshers</h2>
+            <p class="text-gray-700 max-w-xl mt-2">
+              Beat the heat with your bestie, Refreshers now available in Lychee Raspberry and Kiwi Calamansi flavours.
+            </p>
+            <button
+              class="bg-green-800 text-white w-[15vw] ml-auto mr-8 mb-4 font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition-all">
+              Order Now
+            </button>
+          </div>
+
+        </div>
+
+        <button id="next" class="absolute bottom-[30%] -right-8 text-3xl z-10">➡️</button>
+        <button id="prev" class="absolute bottom-[30%] -left-8 text-3xl z-10">⬅️</button>
+
+      </div>
+
+      <div class="imgCardBox mx-[8rem] h-auto py-3">
+        <h1 class="text-2xl font-bold mb-4 font-sans">Handcrafted Curations</h1>
+        <div class="imgBox w-full flex justify-between items-center">
+          <!-- ========== image 1 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Bestseller.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Bestseller
+            </figcaption>
+          </div>
+          <!-- ========== image 2 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Drinks.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Drink
+            </figcaption>
+          </div>
+          <!-- ========== image 3 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Food.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Food
+            </figcaption>
+          </div>
+          <!-- ========== image 4 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Merchandise.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Merchandise
+            </figcaption>
+          </div>
+          <!-- ========== image 5 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/CoffeeAtHome.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Coffee at home
+            </figcaption>
+          </div>
+          <!-- ========== image 6 =========== -->
+          <div class="imgCard flex flex-col justify-center items-center gap-1 p-2">
+            <div class="cardimg rounded-full">
+              <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/ReadyToEat.jpg" alt="#"
+                class="w-[16vh] h-[16vh] rounded-full object-cover" />
+            </div>
+            <figcaption class="text-l font-medium">
+              Ready to Eat
+            </figcaption>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================Section 2/ page 2==================== -->
+
+    <section id="page2" class="h-[150vh] py-16 w-full bg-white flex flex-col gap-10">
+      <div class="productCardBoard bg-[#EDEBE9] w-full h-auto px-[8rem] py-5">
+        <h1 class="text-2xl font-bold ">Barista Recommends</h1>
+        <div id="p2Cardbox" class="w-full px-4 mb-10 ">
+          <div class="p2card mt-8 bg-white flex px-6 pt-4 rounded-lg h-[22vh] w-[25vw] shadow-md origin-bottom-right">
+            <div class="imageBar h-full w-[28%]">
+
+              <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100501.webp" alt="#"
+                class="h-[5rem] w-[5rem] object-cover rounded-lg mb-5" />
+              <figcaption class="text-base font-medium font-sans flex gap-1 "><span>&#x20B9</span>420.00</figcaption>
+
+            </div>
+            <div class="imageDescription h-full w-[72%] flex flex-col ">
+              <img src="https://www.starbucks.in/assets/icon/veg.svg" class="h-5 object-cover self-start" alt="#">
+              <h2 class="text-sm font-bold">Java Chip Frappuccino</h2>
+              <p class="font-light text-[0.5rem]">TALL(345 ml). 32 kcal</p>
+              <button
+                class="self-end mt-auto mb-3 py-2 px-4 bg-[#00754A] rounded-full text-white text-xs font-sans font-bold">Add
+                Item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group showOff bg-[#edebe9] w-full h-auto py-8 px-[8rem]">
+        <h1 class="text-2xl font-bold mb-4 font-sans">Learn more about the world of coffee!</h1>
+
+        <div
+          class="showOffImg bg-[url(https://media.istockphoto.com/id/923370822/photo/espresso-machine.webp?a=1&b=1&s=612x612&w=0&k=20&c=VmWmM02ipna0oTJi4ALIP2HJ8jthnmHmFUkoopukt3w=)] w-full h-[53.5vh] bg-cover bg-center mt-8 bg-no-repeat rounded-lg relative overflow-hidden">
+
+          <!-- Overlay -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-700 ease-in-out rounded-lg">
+          </div>
+
+          <div class="absolute inset-0 px-8 py-4 flex flex-col">
+            <h2 class="bg-[#C7d5ce] rounded-md font-bold text-[0.55rem] text-green-700 text-sans px-2 py-1 w-fit">Coffee
+              Culture</h2>
+            <div class="book mt-auto text-white mb-4">
+              <h2 class="text-2xl font-sans font-bold">Art & Science Of Coffee Brewing</h2>
+              <p class="text-sm font-sans mt-4 mb-12">Master the perfect brew with Starbucks! Learn the art and science
+                of coffee brewing.</p>
+              <button class="text-black bg-white rounded-full px-16 py-2 text-xs font-semibold font-sans ">Learn
+                More</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Starbucks Footer Clone using Tailwind CSS -->
+    <footer class="bg-[#0e382c] text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto mt-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2">
+          <!-- Logo -->
+          <div class="flex items-start">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/800px-Starbucks_Corporation_Logo_2011.svg.png"
+              alt="Starbucks Logo" class="w-16 h-16">
+          </div>
+
+          <!-- About Us -->
+          <div class="leading-[3]">
+            <h3 class="font-bold mb-2">About Us</h3>
+            <ul class=" space-y-1 leading-[3] text-sm">
+              <li>Our Heritage</li>
+              <li>Coffeehouse</li>
+              <li>Our Company</li>
+            </ul>
+          </div>
+
+          <!-- Responsibility -->
+          <div class="leading-[3]">
+            <h3 class="font-bold mb-2">Responsibility</h3>
+            <ul class=" space-y-1 leading-[3] text-sm">
+              <li>Diversity</li>
+              <li>Community</li>
+              <li>Ethical Sourcing</li>
+              <li>Environmental Stewardship</li>
+              <li>Learn More</li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="leading-[3]">
+            <h3 class="font-bold mb-2">Quick Links</h3>
+            <ul class=" space-y-1 leading-[3] text-sm">
+              <li>Privacy Policy</li>
+              <li>FAQs</li>
+              <li>Customer Service</li>
+              <li>Delivery</li>
+              <li>Loyalty Program Terms and Conditions</li>
+              <li>Starbucks India Mobile App Terms of Use</li>
+              <li>Special Discount 25% Off Offer</li>
+              <li>Beverage Subscription</li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="leading-[3]">
+            <h3 class="font-bold mb-2">Legal</h3>
+            <ul class=" space-y-1 leading-[3] text-sm">
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media and App Links -->
+        <div class="mt-10 flex gap-16">
+          <div class="space-y-4">
+            <h4 class="font-bold font-sans text-l">SOCIAL MEDIA</h4>
+            <div class="flex items-center gap-6 text-3xl text-medium">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt="App Store" class="w-33 h-12">
+            <img src="https://www.starbucks.in/assets/images/appstoreAndroid.png" alt="Google Play" class="w-33 h-15">
+          </div>
+        </div>
+
+        <!-- Bottom Links -->
+        <div class="border-t border-white mt-10 pt-6 text-xs flex justify-between">
+          <div class="flex gap-4 flex-wrap font-sans font-thin font-l ">
+            <a class="border-r border-white pr-4" href="#">Web Accessibility</a>
+            <a class="border-r border-white pr-4" href="#">Privacy Statement</a>
+            <a class="border-r border-white pr-4" href="#">Terms of Use</a>
+            <a class="border-r border-white pr-4" href="#">Contact Us</a>
+          </div>
+          <div>
+            <p class="text-[0.55rem]"> © 2025 Starbucks Coffee Company. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- You can add Font Awesome CDN in your HTML head to enable social icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+
+
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+    integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
