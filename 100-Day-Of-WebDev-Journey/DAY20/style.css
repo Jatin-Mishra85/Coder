@@ -1,0 +1,292 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html, body {
+    height: 100%;
+    width: 100%;
+    /* background-color: #0e0e0e; */
+    font-family: "Poppins";
+    }
+    main {
+    width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(22, 1, 54);
+        position: sticky;
+        top: 0;
+    }
+    header .logo .img img{
+        height: 100px;
+        mix-blend-mode: multiply;
+    }
+    header .logo .img {
+        height: 100%;
+    }
+    .page1 ,header, .page{
+        width: 100%;
+    }
+    header .logo{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        background-color: yellow;
+    }
+    .logo .title h1{
+        font-family: "Syne";
+        letter-spacing: 5px;
+        font-weight: normal;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .logo .title h1 span{
+        font-weight: 700;
+    }
+
+    nav{
+        /* width: 75%; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-right: 50px;
+        padding: 0 20px;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1.2rem;
+        letter-spacing: normal;
+        transition: all ease-in-out 0.3s;
+
+    }
+    nav a:hover{
+        color: yellow;
+    }
+    .page{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://img.freepik.com/free-photo/illustration-construction-site_23-2151850251.jpg?ga=GA1.1.1784644112.1745984957&semt=ais_hybrid&w=740);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .page h1{
+        color: white;
+        font-size: 4rem;
+        font-weight: bolder;
+        text-align: center;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        width: 70%;
+        margin-bottom: auto;
+        margin-top: 50px;
+    }
+.page2{
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.page2 .TextServices{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: normal;
+    position: relative;
+    margin-top: 2rem;
+}
+.page2 .TextServices::after{
+content: "";
+width: 10%;
+height: 10px;
+position: absolute;
+bottom: -20%;
+left: 45%;
+background-color: #ffd900;
+}
+.triCards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.triCards .cards{
+    width: 20vw;
+    height: 70vh;
+    background-color: #e4e4e45a;
+}
+.triCards .cards .posterImg{
+    width: 100%;
+    height: 45%;
+}
+.triCards .cards .posterImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.triCards .cards .posterText{
+    width: 100%;
+    height: 55%;
+    padding: 10px 20px;
+    line-height: 1.2;
+}
+.triCards .cards .posterText h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    font-family: "Poppins";
+    margin: 1rem 0;
+    color: rgb(19, 7, 69);
+    opacity: 0.8;
+}
+.triCards .cards .posterText p{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: normal;
+    opacity: 0.8;
+}
+
+.page3{
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://images.unsplash.com/photo-1614326014420-1f0c741ca7e1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.leftPor3{
+    width: 50%;
+    height: 100vh;
+    background-color: #e4e4e4;
+    padding: 4rem 6rem 4rem 10rem;
+}
+.leftPor3 h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+
+.leftPor3 h1::after{
+    content: "";
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    bottom: -10%;
+    background-color: rgb(192, 192, 0);
+    left: 0%;
+}
+
+.leftPor3 p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: normal;
+    margin: 3rem 0;
+}
+.stats-section {
+    background-color: #f1ce18;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+  }
+  
+  .stat-box {
+    text-align: center;
+    color: #2f4c6a;
+    position: relative;
+    padding: 0 30px;
+  }
+  
+  .stat-box:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 1px;
+    background-color: #ffffff;
+  }
+  
+  .stat-number {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .page4{
+    width: 100%;
+    height: 200vh;
+    margin-top: 5rem;
+    background-color: #FffFFF;
+  }
+  .page4 .TextProjects{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    position: relative;
+    margin-top: 2rem;
+}
+.page4 .TextProjects::after{
+content: "";
+width: 10%;
+height: 10px;
+position: absolute;
+bottom: -10%;
+left: 45%;
+background-color: #ffd900;
+}
+.imgCards{
+    width: 100%;
+    height: auto;
+    display: flex;justify-content: center;align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+gap: 2rem;
+}
+.imgCards .imgCard{
+    max-width: 32%;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+}
+.imgCards .imgCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+}
+.imgCards .imgCard img:hover{
+    transform: scale(1.1);
+}
