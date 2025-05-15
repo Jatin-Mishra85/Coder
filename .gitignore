@@ -27,3 +27,5 @@ __pycache__/
 
 30-DAYS-OF-JAVASCRIPT-TOUR
 Class_Room
+package-lock.json
+package.json
